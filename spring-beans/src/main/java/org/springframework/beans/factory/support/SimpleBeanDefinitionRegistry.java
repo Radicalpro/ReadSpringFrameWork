@@ -46,6 +46,7 @@ public class SimpleBeanDefinitionRegistry extends SimpleAliasRegistry implements
 
 		Assert.hasText(beanName, "'beanName' must not be empty");
 		Assert.notNull(beanDefinition, "BeanDefinition must not be null");
+		// SimpleBeanDefinitionRegistry 中的put
 		this.beanDefinitionMap.put(beanName, beanDefinition);
 	}
 
